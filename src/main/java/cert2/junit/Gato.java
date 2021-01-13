@@ -1,5 +1,3 @@
-package cert2.junit;
-
 public class Gato  {
 	
 	private String color;

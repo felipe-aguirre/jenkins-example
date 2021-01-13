@@ -1,5 +1,3 @@
-package cert2.junit;
-
 
 import org.junit.Test;
 
