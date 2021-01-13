@@ -5,12 +5,12 @@ import org.junit.Assert;
 public class Main {
 	public static void main(String[] args) {
 		
-		private String color;
-		private String nombrePropietario;
-		private int gatitos;
+		String color;
+		String nombrePropietario;
+		int gatitos;
 		
 		//Constructor
-		public Gato(String color, String nombrePropietario, int gatitos) {
+		Gato(String color, String nombrePropietario, int gatitos) {
 			super();
 			this.color = color;
 			this.nombrePropietario = nombrePropietario;
@@ -19,29 +19,29 @@ public class Main {
 			this.gatitos = Math.min(gatitos, 2);
 		}
 		//Getters y Setters
-		public String getColor() {
+		String getColor() {
 			return color;
 		}
 
 		//Getter renombrado para cumplir condiciones del enunciado
-		public String propietario() {
+		String propietario() {
 			return nombrePropietario;
 		}
 
 
 
-		public int getGatitos() {
+		int getGatitos() {
 			return gatitos;
 		}
 
-		public void addGatito(int gatitos) {
+		void addGatito(int gatitos) {
 			if (gatitos > 0) {
 				this.gatitos = Math.min(gatitos + this.gatitos, 2);
 			}
 		}
 		
 		@Override
-		public boolean equals(Object otro) {
+		boolean equals(Object otro) {
 			if (this == otro) return true;
 			if (otro == null || getClass() != otro.getClass()) return false;
 			
